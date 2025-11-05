@@ -11,5 +11,6 @@ func SetupRouter() *gin.Engine {
 	r.POST("/addArticle", article.AddArticle)
 	r.GET("/article", article.CheckAnItem)
 	r.GET("/listArticle", article.ListNArticles)
+	r.PATCH("/editArticle", article.EditArticle)
 	return r
 }
