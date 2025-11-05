@@ -6,3 +6,9 @@ type Article struct {
 	Giacenza       int     `json:"giacenza"`
 	PrezzoUnitario float32 `json:"prezzoUnitario"`
 }
+
+type EditArticleRequest struct {
+	ID   string `json:"id"`
+	Edit string `json:"edit"`
+	Into string `json:"into"`
+}
